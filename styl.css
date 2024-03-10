@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ustawienia nagłówka */
+header {
+    background-image: url("warzywa.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+header .logo i {
+    color: #4CAF50;
+}
+
+header .slogan {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+header .button {
+    background-color: #4CAF50;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .button:hover {
+    transform: scale(1.1);
+}
+
+/* Ustawienia nawigacji */
+.menu {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.menu .logo {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.menu .logo i {
+    color: #4CAF50;
+}
+
+.menu .menu {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.menu .menu li {
+    margin-left: 20px;
+}
+
+.menu .menu li a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu .menu li a:hover {
+    color: #4CAF50;
+}
+
+/* Ustawienia sekcji o nas */
+.about {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about .image {
+    width: 40%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.about .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.about .image img:hover {
+    transform: scale(1.1);
+}
+
+.about .content {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.about .content h2 {
+    color: #4CAF50;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about .content p {
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about .content .button {
+    background-color: #4CAF50;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about .content .button:hover {
+    transform: scale(1.1);
+}
+
+/* Ustawienia sekcji oferty */
+.offer {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.offer .card {
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.offer .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #333;
+}/* Ustawienia stopki */
+footer {
+    color: white;
+    background-color: #333;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .contact {
+    list-style: none;
+    display: flex;
+}
+
+footer .contact,a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact,a:hover {
+    color: #4CAF50;
+}
+
+/* Ustawienia responsywności */
+@media (max-width: 768px) {
+    /* Zmiana układu sekcji o nas */
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about .image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .about .content {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .about .content .button {
+        margin: 0 auto;
+    }
+
+    /* Zmiana układu sekcji oferty */
+    .offer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Zmiana układu sekcji kontaktu */
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact .form {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    /* Zmiana układu sekcji oferty */
+    .offer {
+        grid-template-columns: 1fr;
+    }
+
+  
+  
+}
