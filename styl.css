@@ -100,7 +100,7 @@ header .button:hover {
 }
 
 /* Ustawienia sekcji o nas */
-.about {
+#about {
     width: 80%;
     margin: 40px auto;
     display: flex;
@@ -109,24 +109,24 @@ header .button:hover {
     flex-wrap: wrap;
 }
 
-.about .image {
+#about .image {
     width: 40%;
     height: 400px;
     overflow: hidden;
 }
 
-.about .image img {
+#about .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.3s;
 }
 
-.about .image img:hover {
+#about .image img:hover {
     transform: scale(1.1);
 }
 
-.about .content {
+#about .content {
     width: 50%;
     height: 400px;
     display: flex;
@@ -135,14 +135,14 @@ header .button:hover {
 }
 
 
-.about .content h2 {
+#about .content h2 {
     color: #4CAF50;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.about .content p {
+#about .content p {
     color: #333;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -150,7 +150,7 @@ header .button:hover {
     margin-bottom: 20px;
 }
 
-.about .content .button {
+#about .content .button {
     background-color: #4CAF50;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -162,12 +162,12 @@ header .button:hover {
     transition: 0.3s;
 }
 
-.about .content .button:hover {
+#about .content .button:hover {
     transform: scale(1.1);
 }
 
 /* Ustawienia sekcji oferty */
-.offer {
+#offer {
     width: 80%;
     margin: 40px auto;
     display: grid;
@@ -175,14 +175,14 @@ header .button:hover {
     grid-gap: 20px;
 }
 
-.offer .card {
+#offer .card {
     border: 1px solid #333;
     border-radius: 10px;
     overflow: hidden;
     transition: 0.3s;
 }
 
-.offer .card:hover {
+#offer .card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #333;
 }/* Ustawienia stopki */
@@ -246,6 +246,7 @@ footer .contact,a {
     .contact .form {
         width: 100%;
         height: auto;
+        
     }
 
 
