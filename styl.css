@@ -222,8 +222,9 @@ footer p {
 
 /* Styl dla ekranów mniejszych niż 768px */
 @media (max-width: 768px) {
-    /* Zmień kierunek menu na pionowy */
-
+    .menu {
+        font-size: 50%;
+    }
     /* Zmień kierunek sekcji o nas na pionowy */
     #about {
         flex-direction: column;
