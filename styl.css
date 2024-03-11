@@ -262,6 +262,10 @@ footer .contact,a {
         grid-template-columns: 1fr;
     }
 
-  
+  @media screen and (max-width: 768px) {
+    /* Styl dla urządzeń o szerokości do 768px */
+    /* Tutaj możesz dostosować marginesy, fonty, itp. */
+}
+
   
 }
