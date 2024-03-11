@@ -254,18 +254,12 @@ footer .contact,a {
     }
 
 
-}
-
-@media (max-width: 480px) {
-    /* Zmiana układu sekcji oferty */
-    .offer {
-        grid-template-columns: 1fr;
+    @media screen and (max-width: 768px) {
+        /* Styl dla urządzeń o szerokości do 768px */
+        /* Tutaj możesz dostosować marginesy, fonty, itp. */
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
     }
-
-  @media screen and (max-width: 768px) {
-    /* Styl dla urządzeń o szerokości do 768px */
-    /* Tutaj możesz dostosować marginesy, fonty, itp. */
-}
-
-  
-}
