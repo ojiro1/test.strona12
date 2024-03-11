@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-
+ 
 /* Ustawienia nagłówka */
 header {
     background-image: url("warzywa.jpg");
@@ -19,7 +19,7 @@ header {
 header.hidden {
     top: -80px;
 }
-
+ 
 header .logo {
     color: white;
     font-family: "Poppins", sans-serif;
@@ -27,11 +27,11 @@ header .logo {
     font-weight: bold;
     margin-bottom: 20px;
 }
-
+ 
 header .logo i {
     color: #4CAF50;
 }
-
+ 
 header .slogan {
     color: white;
     font-family: "Poppins", sans-serif;
@@ -39,7 +39,7 @@ header .slogan {
     font-style: italic;
     margin-bottom: 40px;
 }
-
+ 
 header .button {
     background-color: #4CAF50;
     color: white;
@@ -51,14 +51,14 @@ header .button {
     cursor: pointer;
     transition: 0.3s;
 }
-
+ 
 header .button:hover {
     transform: scale(1.1);
 }
-
+ 
 /* Ustawienia nawigacji */
 .menu {
-    
+ 
     top: 0;
     left: 0;
     width: 100%;
@@ -68,7 +68,7 @@ header .button:hover {
     align-items: center;
     z-index: 1;
 }
-
+ 
 .menu .logo {
     color: white;
     font-family: "Poppins", sans-serif;
@@ -76,21 +76,21 @@ header .button:hover {
     font-weight: bold;
     margin-left: 20px;
 }
-
+ 
 .menu .logo i {
     color: #4CAF50;
 }
-
+ 
 .menu .menu {
     list-style: none;
     display: flex;
     margin-right: 20px;
 }
-
+ 
 .menu .menu li {
     margin-left: 20px;
 }
-
+ 
 .menu .menu li a {
     color: white;
     font-family: "Poppins", sans-serif;
@@ -98,11 +98,11 @@ header .button:hover {
     text-decoration: none;
     transition: 0.3s;
 }
-
+ 
 .menu .menu li a:hover {
     color: #4CAF50;
 }
-
+ 
 /* Ustawienia sekcji o nas */
 #about {
     width: 80%;
@@ -112,24 +112,24 @@ header .button:hover {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+ 
 #about .image {
     width: 40%;
     height: 400px;
     overflow: hidden;
 }
-
+ 
 #about .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.3s;
 }
-
+ 
 #about .image img:hover {
     transform: scale(1.1);
 }
-
+ 
 #about .content {
     width: 50%;
     height: 400px;
@@ -137,15 +137,15 @@ header .button:hover {
     flex-direction: column;
     justify-content: center;
 }
-
-
+ 
+ 
 #about .content h2 {
     color: #4CAF50;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
     margin-bottom: 20px;
 }
-
+ 
 #about .content p {
     color: #333;
     font-family: "Poppins", sans-serif;
@@ -153,7 +153,7 @@ header .button:hover {
     line-height: 1.5;
     margin-bottom: 20px;
 }
-
+ 
 #about .content .button {
     background-color: #4CAF50;
     color: white;
@@ -165,11 +165,11 @@ header .button:hover {
     cursor: pointer;
     transition: 0.3s;
 }
-
+ 
 #about .content .button:hover {
     transform: scale(1.1);
 }
-
+ 
 /* Ustawienia sekcji oferty */
 #offer {
     width: 80%;
@@ -178,18 +178,56 @@ header .button:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
-
+ 
 #offer .card {
     border: 1px solid #333;
     border-radius: 10px;
     overflow: hidden;
     transition: 0.3s;
 }
-
+ 
 #offer .card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #333;
-}/* Ustawienia stopki */
+}
+ 
+#offer .card .image {
+    width: 100%;
+    height: 200px;
+}
+ 
+#offer .card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+#offer .card .content {
+    padding: 20px;
+}
+ 
+#offer .card .content h3 {
+    color: #4CAF50;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+ 
+#offer .card .content p {
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+ 
+#offer .card .content .price {
+    color: #4CAF50;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+ 
+/* Ustawienia stopki */
 footer {
     color: white;
     background-color: #333;
@@ -198,68 +236,103 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
+ 
 footer .contact {
     list-style: none;
     display: flex;
 }
-
+ 
 footer .contact,a {
     color: white;
     font-size: 20px;
     text-decoration: none;
     transition: 0.3s;
 }
-
+ 
 .contact,a:hover {
     color: #4CAF50;
 }
-
+ 
 /* Ustawienia responsywności */
 @media (max-width: 768px) {
     /* Zmiana układu sekcji o nas */
-    .about {
+    #about {
         flex-direction: column-reverse;
     }
-
-    .about .image {
+ 
+    #about .image {
         width: 100%;
         height: 300px;
     }
-
-    .about .content {
+ 
+    #about .content {
         width: 100%;
         height: auto;
         text-align: center;
     }
-
-    .about .content .button {
-        margin: 0 auto;
-    }
-
+ 
     /* Zmiana układu sekcji oferty */
-    .offer {
+    #offer {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    /* Zmiana układu sekcji kontaktu */
-    .contact {
+ 
+    /* Zmiana układu menu */
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
         flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 80px;
+        transition: 0.3s;
     }
-
-    .contact .form {
+ 
+    .menu.active {
+        left: 0;
+    }
+ 
+    .menu .logo {
+        display: none;
+    }
+ 
+    .menu .menu {
+        flex-direction: column;
+        margin-right: 0;
+    }
+ 
+    .menu .menu li {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+ 
+    .menu .menu li a {
+        font-size: 24px;
+    }
+ 
+    /* Dodanie ikony hamburgera */
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 2;
+    }
+ 
+    .hamburger div {
         width: 100%;
-        height: auto;
-        
+        height: 4px;
+        background-color: white;
+        border-radius: 2px;
     }
-
-
-    @media screen and (max-width: 768px) {
-        /* Styl dla urządzeń o szerokości do 768px */
-        /* Tutaj możesz dostosować marginesy, fonty, itp. */
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-        }
+ 
+    /* Ukrycie nagłówka */
+    header {
+        display: none;
     }
+}
