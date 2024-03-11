@@ -217,4 +217,33 @@ footer p {
     font-size: 18px;
     margin-right: 20px;
 }
+
+
+/* Styl dla ekranów mniejszych niż 768px */
+@media (max-width: 768px) {
+    /* Zmień kierunek menu na pionowy */
+    .menu {
+        flex-direction: column;
+    }
+
+    /* Zmień kierunek sekcji o nas na pionowy */
+    #about {
+        flex-direction: column;
+    }
+
+    /* Zmień szerokość obrazu i treści na 100% */
+    #about .image, #about .content {
+        width: 100%;
+    }
+
+    /* Zmień układ sekcji oferty na jedną kolumnę */
+    #offer {
+        grid-template-columns: 1fr;
+    }
+
+    /* Zmień szerokość mapy na 100% */
+    .map iframe {
+        width: 100%;
+    }
+}
  
